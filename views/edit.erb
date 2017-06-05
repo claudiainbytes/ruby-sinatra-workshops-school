@@ -1,0 +1,20 @@
+<h1>Workshop: <i><%= @name.capitalize %></i> - Edit </h1>
+
+<form action="/<%= @name %>" method="post">
+
+  <input type="hidden" name="_method" value="put">
+
+  <fieldset>
+
+    <label for="description">Description:</label>
+    <textarea name="description" id="description" placeholder="Description">
+    <%= @description %>
+    </textarea>
+
+  </fielset>
+
+  <button type="submit">Edit Workshop</button>
+
+</form>
+
+<a class="button button-outline" href="/">Return To Home</a>

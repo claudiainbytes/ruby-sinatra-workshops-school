@@ -1,0 +1,12 @@
+<h1>Workshops</h1>
+
+<fieldset>
+  <a class="button" href="/create">Create Workshop</a>
+</fieldset>  
+
+<ul>
+<% @files.drop(2).each do |file_name| %>
+    <% fname = File.basename(file_name, ".*") %>
+    <li><a href="/<%= File.basename(file_name, ".*") %>"><%= fname.capitalize %></a></li>
+<% end %>
+</ul>

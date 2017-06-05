@@ -1,0 +1,12 @@
+<h1>Workshop: <i><%= @name.capitalize %></i></h1>
+
+<p><%= @description %></p>
+
+<form action="/<%= @name %>" method="post">
+  <fieldset>
+    <input type="hidden" name="_method" value="delete">
+    <a class="button" href="/<%= @name %>/edit">Edit Workshop</a></button>
+    <input class="button" type="submit" name="delete" value="Delete Workshop">
+    <a  class="button button-outline" href="/">Return To Home</a>
+  </fieldset>
+</form>
